@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Python String</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <nav id='navbar'>
+      <header class='section_header'>Python String</header>
+      <ul>
+        <li><a class='nav-link' href="#Strings">Strings</a></li>
+        <li><a class='nav-link' href='#Quotes_Inside_Quotes'>Quotes Inside Quotes</a></li>
+        <li><a class='nav-link' href="#Assign_String_to_a_Variable">Assign String to a Variable</a></li>
+        <li><a class='nav-link' href='#Multiline_Strings'>Multiline Strings</a></li>
+        <li><a class='nav-link' href='#Strings_are_Arrays'>Strings are Arrays</a></li>
+        <li><a class='nav-link' href='#Looping_Through_a_String'>Looping Through a String</a></li>
+        <li><a class='nav-link' href='#String_Length'>String Length</a></li>
+        <li><a class='nav-link' href='#Check_String'>Check String</a></li>
+        <li><a class='nav-link' href='#Check_if_NOT'>Check if NOT</a></li>
+        <li><a class='nav-link' href='#Reference'>Reference</a></li>
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='Strings'>
+        <header class='section_header'>Strings</header>
+        <ul>
+          <li><p>Strings in python are surrounded by either single quatation marks, or double quotation marks.</li>
+          <li><p><span>'hello'</span> is the same as <span>"hello"</span></p></li>
+          <li><p>You can display a string literal with the <span>print()</span></li>
+        </ul> 
+        <div class='code_example'>
+          <header>Example</header>
+          <code>  
+          print("Hello") 
+          print('Hello')
+          </code>
+          <header>Output</header>
+          <code>  
+          Hello
+          Hello
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Quotes_Inside_Quotes'>
+        <header class='section_header'>Quotes Inside Quotes</header>
+        <p>You can use quotes inside a string, as long as they don't match the quatoes surrounding the string:</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <code>
+            print("It's alright")
+            print("He is called 'Johnny'")
+            print('He is called "Johnny"')
+          </code>
+          <header>Output</header>
+          <code>
+            It's alright
+            He is called 'Johnny'
+            He is called "Johnny"
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Assign_String_to_a_Variable'>
+        <header class='section_header'>Assign String to a Variable</header>
+        <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <code>
+            a = "Hello"
+            print(a)
+          </code>
+          <header>Output</header>
+          <code>
+            Hello
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Multiline_Strings'>
+        <header class='section_header'>Multiline Strings</header>
+        <p>You can assign a multiline string to a variable by using three quotes:</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <p>You can use three double quotes:</p>
+          <code>
+            a = """Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua."""
+            print(a)
+          </code>
+          <header>Output</header>
+          <code>
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.
+          </code>
+        </div>
+        <p>Or three single quotes:</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <code>
+            a = '''Lorem ipsum dolor sit amet.
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.'''
+            print(a)
+          </code>
+          <header>Output</header>
+          <code>
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eisumod tempor incidunt,
+            ut labore et dolore magna aliqua.
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Strings_are_Arrays'>
+        <header class='section_header'>Strings are Arrays</header>
+        <ul>
+          <li><p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.</p></li>
+          <li><p>However, Python does not have a character data type, a single character is simply a string with a length of 1.</p></li>
+          <li><p>Square brackets can be used to access elements of the string.</p></li>
+        </ul>
+        <div class='code_example'>
+          <header>Example</header>
+          <p>Get the character at position 1 (remember that the first character has the position 0):</p>
+          <code>
+            a = "Hello, World!"
+            print(a[1])
+          </code>
+          <header>Output</header>
+          <code>
+            e
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Looping_Through_a_String'>
+        <header class='section_header'>Looping Through a String</header>
+        <p>Since strings are arrays, we can loop through the characters in  a string, with a <span>for</span> loop.</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <p>Loop through the letters in the word "banana":
+          <code>
+            for x in "banana":
+              print(x)
+          </code>
+          <header>Output</header>
+          <code>
+            b
+            a
+            n
+            a
+            n
+            a
+          </code>
+        </div> 
+      </section>
+      <section class='main-section' id='String_Length'>
+        <header class='section_header'>String Length</header>
+        <p>To get the length of a string, use the <span>len()</span> function.</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <code>
+            <p>The <span>len()</span> function returns the length of a string:</p>
+            a = "Hello, world!"
+            print(len(a))
+          </code>
+          <header>Output</header>
+          <code>
+            13
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Check_String'>
+        <header class='section_header'>Check String</header>
+        <p>To check if a certain phrase or character is present in s tring, we can use the keyword <span>in</span></p>
+        <div class='code_example'>
+          <header>Example</header>
+          <code>
+            txt = "The best things in life are free!"
+            print("free" in txt)
+          </code>
+          <header>Output</header>
+          <code>
+            True
+          </code>
+          <p>Use it in an <span>if</span> statement:</p>
+          <header>Example</header>
+          <p>Print only if "free" is present:
+          <code>
+            txt = "The best things in life are free!"
+            if "free" in txt:
+              print("Yes, 'free' is present.")
+          </code>
+          <header>Output</header>
+          <code>
+            Yes, 'free' is present.
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Check_if_NOT'>
+        <header class='section_header'>Check if NOT</header>
+        <p>To check if a certain phrase or character is NOT preseent in a string, we can use the keyword <span>not in</span>.</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <p>Check if "expensive" is NOT present in the following text:</p>
+          <code>
+            txt = "The best things in life are free!"
+            print("expensive" not in txt)
+          </code>
+          <header>Output</header>
+          <code>
+            True
+          </code>
+        </div>
+        <p>Use it in a <span>if</span> statement:</p>
+        <div class='code_example'>
+          <header>Example</header>
+          <p>print only if "expensive" is NOT present:</p>
+          <code>
+            txt = "The best things in life are free!"
+            if "expensive" not in txt:
+              print("No, 'expensive' is NOT present.")
+          </code>
+          <header>Output</header>
+          <code>
+            No, 'expensive is NOT present.'
+          </code>
+        </div>
+      </section>
+      <section class='main-section' id='Reference'>
+        <header class='section_header'>Reference</header>
+        <p>All the document in this page is from <a href='https://www.w3schools.com/python/python_strings.asp' target='_blank'>w3schools</a></p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  .section_header {
+   font-weight: 800;
+   font-size: 1.8em
+  }
+  
+  .code_example {
+    background-color: #f7f7f7;
+  }
+  
+  .code_example header {
+    font-weight: 800;
+  }
+  
+  .code_example code {
+    white-space: pre;
+    margin-left: -60px;
+    display: block;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  span {
+    background-color: lightgrey;
+    color: red;
+  }
+  
+  #navbar {
+    border: solid;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+  }
+  #navbar ul {
+    padding-left: -40px;
+  }
+  #navbar li {
+    padding: 10px;
+    border-top: 1px solid;
+    position: relative;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      border-bottom: solid;
+      max-height: 100vh; /* Allows the navbar to scroll if it exceeds viewport height */
+      overflow-y: auto;
+      z-index: 10;
+    }
+  
+    main {
+      margin: 0;
+      padding: 80px 20px 20px;
+    }
+  }
+  
