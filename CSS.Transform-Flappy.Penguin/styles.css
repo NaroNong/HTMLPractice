@@ -43,6 +43,13 @@ body {
   height: 300px;
   margin: auto;
   margin-top: 75px;
+  z-index: 4;
+  position: relative;
+}
+.penguin-head {
+    width: 50%; /* Half of its parent's width */
+    height: 45%;
+    background-color: linear-gradient(45deg, gray, rgb(239,240,228));
 }
 
 .ground {
