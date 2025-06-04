@@ -1,5 +1,6 @@
 :root {
   --penguin-face: white;
+  --penguin-picorna: yellow;
 }
 
 body {
@@ -124,7 +125,7 @@ penguin * {
 
 .beak {
   height: 10%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
 .beak.top {
@@ -175,7 +176,18 @@ penguin * {
 .foot {
   width: 15%;
   height: 30%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.foot.left {
+  left: 25%;
+  rotate: 80deg;
+}
+.foot.right {
+  right: 25%;
+  rotate: -80deg;
 }
 
 .ground {
